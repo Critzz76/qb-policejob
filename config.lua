@@ -27,7 +27,7 @@ Config.Objects = {
 
 Config.Locations = {
     duty = {
-        vector3(440.085, -974.924, 30.689),
+        vector3(441.2115, -981.981, 30.689),
         vector3(-449.811, 6012.909, 31.815),
     },
     vehicle = {
@@ -36,31 +36,31 @@ Config.Locations = {
         vector4(-455.39, 6002.02, 31.34, 87.93),
     },
     stash = {
-        vector3(453.075, -980.124, 30.889),
+        vector3(462.1087, -985.554, 30.728),
     },
     impound = {
-        vector3(436.68, -1007.42, 27.32),
-        vector3(-436.14, 5982.63, 31.34),
+         vector4(463.7092, -1019.84, 28.103, 82.59),
+        vector4(-436.14, 5982.63, 31.34, 136.0),
     },
     helicopter = {
         vector4(449.168, -981.325, 43.691, 87.234),
-        vector4(-475.43, 5988.353, 31.716, 31.34),
+         vector4(-475.43, 5988.353, 31.716, 31.34),
     },
     trash = {
-        vector3(439.0907, -976.746, 30.776),
+        vector3(451.7977, -998.881, 30.689),
     },
     fingerprint = {
-        vector3(460.9667, -989.180, 24.92),
+        vector3(474.76, -1013.15, 26.27),
     },
     evidence = {
-        vector3(442.1722, -996.067, 30.689),
+        vector3(475.1192, -996.338, 26.273),
         vector3(451.7031, -973.232, 30.689),
         vector3(455.1456, -985.462, 30.689),
     },
     stations = {
-        { label = 'Police Station',        coords = vector4(428.23, -984.28, 29.76, 3.5) },
-        { label = 'Prison',                coords = vector4(1845.903, 2585.873, 45.672, 272.249) },
-        { label = 'Police Station Paleto', coords = vector4(-451.55, 6014.25, 31.716, 223.81) },
+        {label = "Police Station", coords = vector4(428.23, -984.28, 29.76, 3.5)},
+        {label = "Prison", coords = vector4(1845.903, 2585.873, 45.672, 272.249)},
+        {label = "Police Station Paleto", coords = vector4(-451.55, 6014.25, 31.716, 223.81)},
     },
 }
 
@@ -101,6 +101,8 @@ Config.SecurityCameras = {
         [32] = { label = 'Vangelico Jewelery CAM#2', coords = vector3(-627.51, -229.51, 40.24), r = { x = -35.0, y = 0.0, z = -95.78 }, canRotate = true, isOnline = true },
         [33] = { label = 'Vangelico Jewelery CAM#3', coords = vector3(-620.3, -224.31, 40.23), r = { x = -35.0, y = 0.0, z = 165.78 }, canRotate = true, isOnline = true },
         [34] = { label = 'Vangelico Jewelery CAM#4', coords = vector3(-622.57, -236.3, 40.31), r = { x = -35.0, y = 0.0, z = 5.78 }, canRotate = true, isOnline = true },
+        [35] = {label = "Vangelico's Grapeseed CAM#1", coords = vector3(1645.27, 4886.01, 44.7), r = {x = -35.0, y = 0.0, z = -141.82}, canRotate = true, isOnline = true},
+        [36] = {label = "Vangelico's Paleto CAM#1", coords = vector3(-374.46, 6045.52, 34.05), r = {x = -35.0, y = 0.0, z = -105.09}, canRotate = true, isOnline = true},
     },
 }
 
@@ -126,17 +128,36 @@ Config.CarItems = {
 
 Config.AuthorizedVehicles = {
     -- Grade 0 and higher
-    [0] = {
-        police = 'Police Car 1',
-        police2 = 'Police Car 2',
-        police3 = 'Police Car 3',
-        police4 = 'Police Car 4',
-        policeb = 'Police Car 5',
-        policet = 'Police Car 6',
-        sheriff = 'Sheriff Car 1',
-        sheriff2 = 'Sheriff Car 2',
-    },
-}
+    [0] = { nkpanto = 'LSPD Panto',  segway = 'LSPD Segway', },
+	-- Grade 1
+	[1] = { police4 = 'Police Car 4',  },
+	[2] = { nkeveron = 'LSPD Everon', police = 'Police Car 1', },
+	[3] = {  police3 = 'Police Car 3', },
+    [4] = {  nkcoquette = 'LSPD Coquette',   },
+    [5] = {  nkkuruma = 'LSPD Kuruma',  },
+	[6] = { nkr300 = 'LSPD R300', },
+    [7] = { nktransporter = 'LSPD Transporter',  },
+    [8] = {  sheriff = 'Sheriff Car 1', },
+    [9] = { policet = 'Police Car 6', },
+    [10] = { nkcomet6 = 'LSPD Comet', },
+    [11] = { sheriff2 = 'Sheriff Car 2', },
+    [12] = { policeb = 'Police Car 5',},
+    [13] = { nkelegy2 = 'LSPD Elegy', },
+    [14] = { nksultan = 'LSPD Sultan', },
+    [15] = { police2 = 'Police Car 2', },
+    [16] = { policet = 'Police Car 6', },
+    [17] = {},
+    [18] = { nkdrafter = 'LSPD Drafter', },
+    [19] = {},
+    [20] = {},
+    [21] = {},
+    [22] = {},
+    [23] = {},
+    [24] = {},
+    [25] = {},
+    [26] = { nkvectre = 'LSPD Vectre', },
+    [27] = {},
+    }
 
 Config.VehicleSettings = {
     ['car1'] = {          --- Model name
